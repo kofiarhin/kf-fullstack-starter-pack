@@ -1,0 +1,30 @@
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "kyrie@gmail.com",
+    "password": "password"
+}
+
+###
+GET http://localhost:5000/api/auth/profile
+
+###
+GET http://localhost:5000/api/auth/logout
+
+#register user
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "name": "kyrie irving",
+    "email": "kyrie@gmail.com",
+    "password": "password"
+}
+
+
+#get list of users
+###
+GET http://localhost:5000/api/users
